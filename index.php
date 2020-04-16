@@ -7,6 +7,8 @@
     <?php
     $name = "PHP Store";
     $credit = 1000;
+    echo "<p>Todays date is:</p>";
+    echo date('l,F dS Y.');
 
 	echo "<h1>Welcome to ".$name."!</h1>";
 	echo "<h2>You have $".$credit." in your wallet.</h2>";
@@ -36,7 +38,7 @@
 	foreach($products as $key => $value){
 		$cost_with_tax = tax_calc($value,$tax_rate);
   		if($cost_with_tax <= $credit ){
-  		echo "<p>".$key." - </p>"; 
+  		echo "<p>".$key." --- </p>"; 
   	}
 	}
 
