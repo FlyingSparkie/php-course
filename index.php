@@ -34,7 +34,7 @@
 	}
 	echo "<h2>These are the Items you can afford</h2>";
 	foreach($products as $key => $value){
-  		if($value <= $credit ){
+  		if($value < $credit ){
   		echo "<p>".$key."</p>"; 
   	}
 	}
