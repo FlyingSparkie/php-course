@@ -34,7 +34,7 @@
 	}
 	echo "<h2>These are the Items you can afford</h2>";
 	foreach($products as $key => $value){
-		$cost_with_tax = tax_calc($value,tax_rate);
+		$cost_with_tax = tax_calc($value,$tax_rate);
   		if($cost_with_tax <= $credit ){
   		echo "<p>".$key." - </p>"; 
   	}
