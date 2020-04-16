@@ -17,7 +17,7 @@
  
     $amount=800;
 	$tax_rate=0.0825;
-	$added+tax= $amount*$tax_rate;  //amount = 800, tax = .0825
+	$added_tax= $amount*$tax_rate;  //amount = 800, tax = .0825
 	echo $added_tax;
     foreach($products as $key => $value){
 	echo "<p>The ".$key." costs ".$value."</p>";
