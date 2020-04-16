@@ -16,9 +16,9 @@
     $products['Toaster']=75;
  
     $amount=800;
-	$taxRate=0.0825;
-	$addedTax= $amount*$taxRate;  //amount = 800, tax = .0825
-	echo $addedTax;
+	$tax_rate=0.0825;
+	$added+tax= $amount*$tax_rate;  //amount = 800, tax = .0825
+	echo $added_tax;
     foreach($products as $key => $value){
 	echo "<p>The ".$key." costs ".$value."</p>";
     }
@@ -29,13 +29,14 @@
 		return $amount_with_tax;
 	}
 	foreach($products as $key => $value){
-		$cost_with_tax = tax_calc($value,$taxRate);
+		$cost_with_tax = tax_calc($value,$tax_rate);
 		echo"<p>The ".$key." costs ".$cost_with_tax." with tax</p>";
 	}
 	echo "<h2>These are the Items you can afford</h2>";
 	foreach($products as $key => $value){
+		$cost_with_tax = tax_calc($value,tax_rate);
   		if($cost_with_tax <= $credit ){
-  		echo "<p>".$key."</p>"; 
+  		echo "<p>".$key." - </p>"; 
   	}
 	}
 
