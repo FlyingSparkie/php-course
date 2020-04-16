@@ -16,6 +16,7 @@
 	$products['Car']=15000;
     $products['iPhone']=1000;
     $products['Toaster']=75;
+    ech "<p> github</p>"
  
     $amount=800;
 	$tax_rate=0.0825;
