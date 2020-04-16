@@ -28,7 +28,7 @@
 		$amount_with_tax = round($amount+$added_tax,2);
 		return $amount_with_tax;
 	}
-	foreach($product as $key => $value){
+	foreach($products as $key => $value){
 		$cost_with_tax = tax_calc($value,$taxRate);
 		echo"<p>The ".$key." costs ".$cost_with_tax." with tax</p>";
 	}
