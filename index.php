@@ -38,7 +38,7 @@
 	foreach($products as $key => $value){
 		$cost_with_tax = tax_calc($value,$tax_rate);
   		if($cost_with_tax <= $credit ){
-  		echo "<p>".$key." * </p>";
+  		echo "<p>".$key." ***** </p>";
   	}
 	}
 
