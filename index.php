@@ -6,7 +6,8 @@
   <body>
     <?php
     $name = "PHP Store";
-    $credit = 1000;
+	$credit = 1000;
+	$amount=800;
     echo "<p>Todays date is:</p>";
     echo date('l,F dS Y.');
 
@@ -16,9 +17,7 @@
 	$products['Car']=15000;
     $products['iPhone']=1000;
     $products['Toaster']=75;
-    ech "<p> github</p>"
- 
-    $amount=800;
+	echo "<p> github</p>";
 	$tax_rate=0.0825;
 	$added_tax= $amount*$tax_rate;  //amount = 800, tax = .0825
 	echo $added_tax;
@@ -39,11 +38,10 @@
 	foreach($products as $key => $value){
 		$cost_with_tax = tax_calc($value,$tax_rate);
   		if($cost_with_tax <= $credit ){
-  		echo "<p>".$key." --- </p>"; 
+  		echo "<p>".$key." * </p>";
   	}
 	}
 
     ?>
   </body>
 </html>
-		
