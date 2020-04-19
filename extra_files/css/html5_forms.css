@@ -1,0 +1,17 @@
+INPUT#textBox { 
+border: 2px solid green;
+}
+
+INPUT#emailBox { 
+border: 2px solid blue; 
+}
+
+
+INPUT:focus { 
+border: 2px solid #6C6; 
+}
+
+INPUT:invalid { 
+border: 2px solid #F00; 
+}
+

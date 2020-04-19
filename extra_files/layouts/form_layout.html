@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>HTML5 Tables</TITLE>
+	<LINK REL=Stylesheet TYPE ="text/css" HREF="../css/form_layout_1.css">
+	</HEAD>
+
+
+	<BODY>
+		<HEADER ID="Banner">
+			<H1>Form Layout</H1>
+		</HEADER>
+
+		<NAV>
+			<UL>
+				<LI><a href="#">Home</a></LI>
+				<LI><a href="#">About Us</a></LI>
+				<LI><a href="#">Contact Us</a></LI>
+				<LI><a href="#">Red Widgets</a></LI>
+				<LI><a href="#">Blue Widgets</a></LI>
+				<LI><a href="#">Green Widgets</a></LI>
+			</UL>
+		</NAV>
+
+
+		<SECTION ID="Wrapper">
+
+			<ARTICLE ID="Article_1">
+				<HEADER ID="Header_Article_1">
+					<H2>Contact Us</H2>
+				</HEADER>
+
+
+	<TABLE>
+
+	<TFOOT>
+		<TD COLSPAN="4" align="Center"><INPUT TYPE="Submit" Value="Submit" ID="SubmitButton"></TD>
+	<TFOOT>
+
+	<TBODY>
+		<TR>
+			<TD CLASS="R1C1">FIRST NAME:</TD>
+			<TD CLASS="R1C2"><INPUT TYPE="Text" PLACEHOLDER="Enter your first name" SIZE="30"></TD>
+			<TD CLASS="R1C3">LAST NAME:</TD>
+			<TD CLASS="R1C4"><INPUT TYPE="Text" PLACEHOLDER="Enter your last name" SIZE="30"></TD>
+
+		</TR>
+
+		<TR>
+			<TD CLASS="R1C1">EMAIL:</TD>
+			<TD COLSPAN="3"><INPUT TYPE="Email" PLACEHOLDER="Enter your Email Address" SIZE="60"></TD>
+
+		</TR>
+
+		<TR>
+			<TD CLASS="R1C1">SUBJECT:</TD>
+			<TD COLSPAN="3">
+				<SELECT class="dropdown">
+					<OPTION Value="Under 16">Red Widget Problem</OPTION>
+					<OPTION Value="16 to 25">Blue Problem</OPTION>
+					<OPTION Value="26 to 40">Green Problem</OPTION>
+
+				</SELECT>
+			</TD>
+
+
+		</TR>
+		<TR>
+			<TD CLASS="R3C1" valign="top">COMMENTS:</TD>
+			<TD COLSPAN="3" valign="top">
+				<TEXTAREA ROWS="7" COLS="45" NAME="TextArea1" ID="TA1" PLACEHOLDER="Comments"></TEXTAREA>
+			</TD>
+
+		</TR>
+
+	<TBODY>
+
+	</TABLE>
+
+
+			</ARTICLE>
+
+		</SECTION>
+
+    	<FOOTER>
+      		<P>Your footer content here</P>
+    	</FOOTER>
+
+  </BODY>
+</HTML>
+

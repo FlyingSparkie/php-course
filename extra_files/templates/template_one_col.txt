@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>One Column Layout</TITLE>
+	</HEAD>
+
+
+	<BODY>
+		<HEADER>
+			<H1>Top Header</H1>
+		</HEADER>
+
+		<NAV>
+			<UL>
+				<LI><a href="#">Home</a></LI>
+				<LI><a href="#">About Us</a></LI>
+				<LI><a href="#">Contact Us</a></LI>
+				<LI><a href="#">Red Widgets</a></LI>
+				<LI><a href="#">Blue Widgets</a></LI>
+				<LI><a href="#">Green Widgets</a></LI>
+			</UL>
+		</NAV>
+
+
+		<SECTION>
+
+			<ARTICLE>
+				<HEADER>
+					<H2>Section Title</H2>
+				</HEADER>
+
+				<SECTION>
+					<P>The contents of this section go here.</P>
+				</SECTION>
+
+			</ARTICLE>
+
+		</SECTION>
+
+    	<FOOTER>
+      		<P>Your footer content here</P>
+    	</footer>
+
+  </BODY>
+</HTML>
+

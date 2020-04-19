@@ -1,0 +1,121 @@
+header, footer, section, nav, article {  
+    display: block;  
+}
+
+BODY {
+	margin: 0 auto;  
+	width: 940px; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+H1 {
+
+	color: red;
+}
+
+H2 {
+	text-align: center;
+	color: blue;
+}
+
+HEADER#Banner {
+	width: 940px;
+	height: 100px;
+	margin: 5px auto;
+	border: 1px solid #000000;
+	text-align: center;
+	/*background-color: blue;*/
+	background-image: URL("../backgrounds/gradient_1.jpg");
+}
+
+FOOTER {
+	float: left;
+	width: 940px;
+	height: 40px;
+	margin: 5px auto;
+	border: 1px solid #000000;
+	text-align: center;
+	background-color: yellow;
+}
+
+NAV {
+	float: left;
+	margin-top: 20px;
+	height: 300px;
+	font-family: Geneva,Arial;
+	border: 1px solid #000000;
+	background-color: #D0DBF0;
+}
+
+NAV ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+NAV li a {
+	display: block;
+	padding: 2px;
+	width: 180px;
+	color: #0000FF;
+	background-color: #D0DBF0;
+	text-decoration: none;
+}
+
+NAV li a:hover {
+	background-color: #00DBF0;
+}
+
+
+SECTION#Wrapper {
+	float: left;
+	width: 700px;
+	height: 700px;
+	margin-top: 5px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+
+ARTICLE#Article_1 {
+	width: 730px;
+	height: 300px;
+	background-color: #ADAAAA;
+}
+
+HEADER#Header_Article_1 {
+	width: 730px;
+	height: 60px;
+	background-color: #DCDCDC;
+}
+
+SECTION#Section_Article_1 {
+	width: 680px;
+	height: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #F8EBEB;
+}
+
+ARTICLE#Article_2 {
+	width: 730px;
+	height: 300px;
+	background-color: #ADAAAA;
+}
+
+HEADER#Header_Article_2 {
+	width: 730px;
+	height: 60px;
+	background-color: #DCDCDC;
+}
+
+SECTION#Section_Article_2 {
+	width: 680px;
+	height: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #F8EBEB;
+}

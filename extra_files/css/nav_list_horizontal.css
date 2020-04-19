@@ -1,0 +1,27 @@
+.navigation {
+	float: left;
+	font-family: Geneva,Arial;
+	border: 1px solid #000000;
+	background-color: #D0DBF0;
+}
+
+.navigation ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.navigation li {
+	display: inline;
+
+}
+.navigation li a {
+	float: left;
+	border-right: 2px solid #00DBF0;
+	padding: 0px 10px;
+	color: #0000FF;
+	text-decoration: none;
+}
+
+.navigation li a:hover {
+	background-color: #00DBF0;
+}

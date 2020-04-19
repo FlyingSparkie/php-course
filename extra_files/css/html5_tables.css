@@ -1,0 +1,31 @@
+TABLE {
+	border:2px solid RGB(0, 149, 159);
+	border-spacing: 0px 0px;
+	background-color: RGB(112, 199, 212);
+	text-align: center;
+	font-family: Arial, Geneva, sans-serif;
+}
+
+THEAD {
+	background-color: RGB(205, 208, 10);
+}
+THEAD, TD {
+	padding: 5px 5px;
+}
+
+
+TFOOT {
+	background-color: RGB(205, 208, 10);
+}
+
+
+TD {
+	border:1px solid RGB(0, 149, 159);
+}
+
+.LeftCol {
+	text-align: left;
+	font-weight: bold;
+}
+
+
