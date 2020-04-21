@@ -45,20 +45,22 @@ if (isset($_POST['Submit1'])) {
 
 ?>
 <html>
+
 <head>
-<title>A BASIC HTML FORM</title>
+    <title>A BASIC HTML FORM</title>
 </head>
+
 <body>
 
-<FORM NAME ="form1" METHOD ="POST" ACTION ="testPrep.php">
+    <FORM NAME="form1" METHOD="POST" ACTION="testPrep.php">
 
-email address <INPUT TYPE = 'TEXT' Name ='email'  value="<?PHP print $email ; ?>">
+        email address <INPUT TYPE='TEXT' Name='email' value="<?PHP print $email ; ?>">
 
 
-<INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Login">
-</FORM>
+        <INPUT TYPE="Submit" Name="Submit1" VALUE="Login">
+    </FORM>
 
-test1@test1.com
+    test1@test1.com
 </body>
-</html>
 
+</html>
