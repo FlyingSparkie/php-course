@@ -1,71 +1,47 @@
-<?PHP
-$uname = "";
-$pword = "";
-$errorMessage = "";
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-	require '../../configure.php';
-
-	$uname = $_POST['username'];
-	$pword = $_POST['password'];
-
-	$database = "login";
-
-
-	$db_found = new mysqli(DB_SERVER, DB_USER, DB_PASS, $database );
-
-	if ($db_found) {
-
-	$SQL = $db_found->prepare('SELECT * FROM login WHERE L1 = ?');
-	$SQL->bind_param('s', $uname);
-	$SQL->execute();
-	$result = $SQL->get_result();
-
-		if ($result->num_rows == 1) {
-
-			$db_field = $result->fetch_assoc();
-
-			if (password_verify($pword, $db_field['L2'])) {
-				session_start();
-				$_SESSION['login'] = "1";
-				header ("Location: page1.php");
-			}
-			else {
-				$errorMessage = "Login FAILED";
-				session_start();
-				$_SESSION['login'] = '';
-			}
-		}
-		else {
-			$errorMessage = "username FAILED";
-		}
-	}
-}
-?>
-
-
+<!DOCTYPE html>
 <html>
-<head>
-<title>Basic Login Script</title>
-</head>
-<body>
+  <head>
+    <title>PHP Store</title>
+  </head>
+  <body>
+    <?php
+    $name = "PHP Store";
+	$credit = 1000;
+	$amount=800;
+    echo "<p>Todays date is:</p>";
+    echo date('l,F dS Y.');
 
-<FORM NAME ="form1" METHOD ="POST" ACTION ="login.php">
+	echo "<h1>Welcome to ".$name."!</h1>";
+	echo "<h2>You have $".$credit." in your wallet.</h2>";
+	$products['Computer']=750;
+	$products['Car']=15000;
+    $products['iPhone']=1000;
+    $products['Toaster']=75;
+	echo "<p> github</p>";
+	$tax_rate=0.0825;
+	$added_tax= $amount*$tax_rate;  //amount = 800, tax = .0825
+	echo $added_tax;
+    foreach($products as $key => $value){
+	echo "<p>The ".$key." costs ".$value."</p>";
+    }
 
-Username: <INPUT TYPE = 'TEXT' Name ='username'  value="<?PHP print $uname;?>" maxlength="20">
-Password: <INPUT TYPE = 'TEXT' Name ='password'  value="<?PHP print $pword;?>" maxlength="16">
+	function tax_calc($amount, $tax){
+		$added_tax = $amount*$tax;
+		$amount_with_tax = round($amount+$added_tax,2);
+		return $amount_with_tax;
+	}
+	foreach($products as $key => $value){
+		$cost_with_tax = tax_calc($value,$tax_rate);
+		echo"<p>The ".$key." costs ".$cost_with_tax." with tax</p>";
+	}
+	echo "<h2>These are the Items you can afford</h2>";
+	foreach($products as $key => $value){
+		$cost_with_tax = tax_calc($value,$tax_rate);
+  		if($cost_with_tax <= $credit ){
+  		echo "<p>".$key." ***** </p>";
+  	}
+	}
 
-<P align = center>
-<INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Login">
-</P>
-
-</FORM>
-
-<P>
-<?PHP print $errorMessage;?>
-
-
-
-
-</body>
+    ?>
+  </body>
 </html>
