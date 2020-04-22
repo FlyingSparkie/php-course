@@ -9,13 +9,11 @@
 </head>
 
 <body>
-    <p>Todays date is:
-        <?php
-
-        echo date( 'l,F dS Y.'); 
-
-    ?>
-    </p>
+<p>Todays date is:
+<?php 
+echo date( 'l,F dS Y.'); 
+?>
+</p>
 
 
 </body>

@@ -1,67 +1,22 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML PUBLIC>
+<html xmlns="http://www.w3.org/1999/xhtml" <head>
+<title>PhP date</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
 
-<html>
 
-<head>
-    <title>testsite</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <style type="text/css">
-        <!-- body {
-            background-color: #F8F7CE;
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            font-size: 12px;
-            margin: 10px;
-        }
-        
-        -->
-    </style>
 </head>
 
 <body>
-    <?php
-      $name   = "PHP Store";
-      $credit = 1000;
-      $amount = 800;
-      echo "<p>Todays date is:</p>";
-      echo date('l,F dS Y.');
+    <p>Todays date is:
+        <?php
 
-      echo "<h1>Welcome to " . $name . "!</h1>";
-      echo "<h2>You have $" . $credit . " in your wallet.</h2>";
-      $products['Computer'] = 750;
-      $products['Car']      = 15000;
-      $products['iPhone']   = 1000;
-      $products['Toaster']  = 75;
-      echo "<p> github</p>";
-      $tax_rate  = 0.0825;
-      $added_tax = $amount * $tax_rate;
-      echo $added_tax;
-      function tax_calc($amount, $tax)
-      {
-          $added_tax       = $amount * $tax;
-          $amount_with_tax = round($amount + $added_tax, 2);
-          return $amount_with_tax;
-      }
+        echo date( 'l,F dS Y.'); 
 
-      echo "<h2>These are the Items you can afford</h2>";
-      foreach ($products as $key => $value) {
-          $cost_with_tax = tax_calc($value, $tax_rate);
-          if ($cost_with_tax <= $credit) {
-              echo "<p>" . $key . " ***** </p>";
-          }
-      }
-      foreach ($products as $key => $value) {
-          echo "<p>The " . $key . " costs " . $value . "</p>";
-      }
+    ?>
+    </p>
 
-      foreach ($products as $key => $value) {
-          $cost_with_tax = tax_calc($value, $tax_rate);
-          echo "<p>The " . $key . " costs " . $cost_with_tax . " with tax</p>";
-      }
-
-  ?>
-        <!-- page content goes here -->
 
 </body>
 
